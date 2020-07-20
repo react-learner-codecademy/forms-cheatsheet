@@ -1,6 +1,6 @@
 # forms-cheatsheet
-1st hands-off project in Codecademy's web development track.
+This is a cheatsheet for understanding the <input> element in HTML: its most important attributes and some alternative/complementary elements.
 
-My first time creating a webpage from scratch (as an adult, in any case; I first learned HTML as a kid and loved making websites back then).
+I created it in response to the 1st hands-off project in Codecademy's web development track. It was my first time creating a webpage from scratch (at least, as an adult; I first learned HTML as a kid and made websites about everything back then).
 
 Assignment: build a reference sheet for a certain aspect of HTML or CSS.
