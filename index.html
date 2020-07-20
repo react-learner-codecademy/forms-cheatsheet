@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>HTML Forms</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>HTML Forms: a Cheatsheet</h1>
+    </header>
+    
+    <main>
+        <article>
+            <h2>Types of &lt;input&gt;:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Checkbox</td>
+                        <td>Renders a single checkbox item. Related checkboxes must share the same name attribute</td>
+                        <td>type="checkbox"</td>
+                    </tr>
+                    <tr>
+                        <td>Number</td>
+                        <td>Renders a text field, in which only numbers, '.', '+', '-' can be entered</td>
+                        <td>type="number"</td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td>Renders a slider. Important attributes: <em>min</em>, <em>max</em>, <em>step</em></td>
+                        <td>type="range"</td>
+                    </tr>
+                    <tr>
+                        <td>Text</td>
+                        <td>Renders a single-row text field</td>
+                        <td>type="text"</td>
+                    </tr>
+                    <tr>
+                        <td>Radio</td>
+                        <td>Renders a single radio button. If multiple radio buttons are assigned the same <em>name</em>, only one of these buttons can be selected at a time.</td>
+                        <td>type="radio"</td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>Renders a single-row text field, where user input is censored</td>
+                        <td>type="password"</td>
+                    </tr>
+                    <tr>
+                        <td>Submit</td>
+                        <td>Renders a submission button. Default text of "Submit" can be changed by modifying the <em>value</em> attribute.</td>
+                        <td>type="submit"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        
+        <article>
+            <h2>Attributes of &lt;input&gt;:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>type</em></td>
+                        <td>Affects the way the element renders on the page plus the type of input allowed</td>
+                    </tr>
+                    <tr>
+                        <td><em>name</em></td>
+                        <td>This is a very important attribute, as a pair of <em>name</em> and <em>value</em> is generally what will be sent upon submission of a form.</td>
+                    </tr>
+                    <tr>
+                        <td><em>id</em></td>
+                        <td>This is mainly useful for connecting input elements with label elements, which should have the input's <em>id</em> as their <em>for</em> attribute</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        
+        <article>
+            <h2>Alternatives to &lt;input&gt;:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Important attributes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td>Creates a multi-line textbox for input. Unlike &lt;input&gt;, it must be paired with a closing tag. Text between the two tags will become placeholder text that starts in the field.</td>
+                        <td><em>rows</em>, <em>cols</em>, <em>value</em>, <em>form</em>, <em>name</em></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td>Creates a dropdown list for selection. Only one choice, corresponding to one &lt;option&gt; element, can be selected at a time.</td>
+                        <td><em>name</em>. For &lt;option&gt;: <em>value</em></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;datalist&gt;</td>
+                        <td>This is not so much an alternative to the input element as it is a special variety. If paired with the &lt;input&gt; element, it will render a text field with a searchable list of pre-defined options, while maintaining the user's ability to write their own. The input's <em>list</em> attribute must match the datalist's <em>id</em></td>
+                        <td><em>id</em>. For &lt;input&gt;: <em>list</em>. For &lt;option&gt;: <em>value</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>
