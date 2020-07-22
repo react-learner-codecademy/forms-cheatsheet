@@ -9,6 +9,11 @@
 <body>
     <header>
         <h1>HTML Forms: a Cheatsheet</h1>
+        <div class="intro">
+            <p>Struggling to understand HTML forms?</p>
+            <p>Can't remember the difference between a select and a datalist?</p>
+            <p id="intro-end"> You've come to the right place.</p>
+        </div>
     </header>
     
     <main>
@@ -78,6 +83,10 @@
                         <td>Affects the way the element renders on the page plus the type of input allowed. See above table.</td>
                     </tr>
                     <tr>
+                        <td><em>value</em></td>
+                        <td><em>value</em> is what is sent (paired with the <em>name</em> of the input field) when a form is submitted. For a text input, value would be what is in the text box. It can be manually assigned to set default values for a form.</td>
+                    </tr>
+                    <tr>
                         <td><em>name</em></td>
                         <td>This is a very important attribute, as a pair of <em>name</em> and <em>value</em> is generally what will be sent upon submission of a form.</td>
                     </tr>
@@ -86,7 +95,28 @@
                         <td>This is mainly useful for connecting input elements with label elements, which should have the input's <em>id</em> as their <em>for</em> attribute.</td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td><em>required</em></td>
+                        <td>This straightforward attribute doesn't need to be set to anything; if present, it means that the field must be filled out in order to submit the form. Can also be written as <span class="code-text">required="true"</span>.</td>
+                    </tr>
+                    <tr>
+                        <td><em>min</em></td>
+                        <td>When used with an <span class="code-text">&lt;input&gt;</span> of <span class="code-text">type="number"</span> or <span class="code-text">type="range"</span>, this attribute dictates the minimum value.</td>
+                    </tr>
+                    <tr>
+                        <td><em>max</em></td>
+                        <td>When used with an <span class="code-text">&lt;input&gt;</span> of <span class="code-text">type="number"</span> or <span class="code-text">type="range"</span>, this attribute dictates the maximum value.</td>
+                    </tr>
+                    <tr>
+                        <td><em>minlength</em></td>
+                        <td>When used with text-based <span class="code-text">&lt;input&gt;</span> fields, this attribute dictates the minimum number of characters for the field.</td>
+                    </tr>
+                    <tr>
+                        <td><em>maxlength</em></td>
+                        <td>When used with text-based <span class="code-text">&lt;input&gt;</span> fields, this attribute dictates the maximum number of characters for the field.</td>
+                    </tr>
+                    <tr>
+                        <td><em>pattern</em></td>
+                        <td>When used with text-based <span class="code-text">&lt;input&gt;</span> fields, checks the chosen regular expression against the input upon form submission. E.g. <span class="code-text">pattern="[A-Za-z]{3}"</span> means that the user must input three letters between A and Z; failing to do so will display an error message.</td>
                     </tr>
                 </tbody>
             </table>
@@ -106,17 +136,17 @@
                     <tr>
                         <td><span class="code-text">&lt;textarea&gt;</span></td>
                         <td>Creates a multi-line textbox for input. Unlike <span class="code-text">&lt;input&gt;</span>, it must be paired with a closing tag. Text between the two tags will become placeholder text that starts in the field.</td>
-                        <td><em>rows</em>, <em>cols</em>, <em>value</em>, <em>form</em>, <em>name</em></td>
+                        <td class="important-attributes"><em>rows</em>, <em>cols</em>, <em>value</em>, <em>name</em>, <em>form</em></td>
                     </tr>
                     <tr>
                         <td><span class="code-text">&lt;select&gt;</span></td>
                         <td>Creates a dropdown list for selection. Only one choice, corresponding to one <span class="code-text">&lt;option&gt;</span> element, can be selected at a time.</td>
-                        <td><em>name</em>. For <span class="code-text">&lt;option&gt;</span>: <em>value</em></td>
+                        <td class="important-attributes">For <span class="code-text">&lt;select&gt;</span>: <em>name</em>.<br>For <span class="code-text">&lt;option&gt;</span>: <em>value</em></td>
                     </tr>
                     <tr>
                         <td><span class="code-text">&lt;datalist&gt;</span></td>
-                        <td>This is not so much an alternative to the input element as it is a special variety. If paired with the <span class="code-text">&lt;input&gt;</span> element, it will render a text field with a searchable list of pre-defined options, while maintaining the user's ability to write their own. The input's <em>list</em> attribute must match the datalist's <em>id</em></td>
-                        <td><em>id</em>. For <span class="code-text">&lt;input&gt;</span>: <em>list</em>. For <span class="code-text">&lt;option&gt;</span>: <em>value</em></td>
+                        <td>This is not so much an alternative to the input element as it is a special variety. If paired with the <span class="code-text">&lt;input&gt;</span> element, it will render a text field with a searchable list of pre-defined options, while maintaining the user's ability to write their own. The input's <em>list</em> attribute must match the datalist's <em>id</em>.</td>
+                        <td class="important-attributes">For <span class="code-text">&lt;datalist&gt;</span>: <em>id</em>.<br>For <span class="code-text">&lt;input&gt;</span>: <em>list</em>.<br>For <span class="code-text">&lt;option&gt;</span>: <em>value</em></td>
                     </tr>
                 </tbody>
             </table>
@@ -124,8 +154,9 @@
     </main>
     
     <footer>
-        <p>Site created by Tommy Melvin</p>
-        <a href="https://github.com/react-learner" target="_blank"><img class="footer-logo" src="./github-logo.png" alt="Github Link" /></a>
+        <p id="byline">Site created in 2020 by Tommy Melvin</p>
+        <a href="https://github.com/react-learner" target="_blank"><img class="footer-logo" src="./github-logo.png" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/tommy-melvin-66a351126/" target="_blank"><img class="footer-logo" src="./linkedin-logo.png" alt="Linkedin" /></a>
     </footer>
 </body>
     

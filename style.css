@@ -1,7 +1,8 @@
 body {
-    font-family: monospace;
+    font-family: "Courier", monospace;
     font-size: 16px;
-    background-color: antiquewhite;
+    background-color: papayawhip;
+    text-align: center;
 }
 
 .footer-logo {
@@ -11,10 +12,44 @@ body {
 .code-text {
     background-color: black;
     color: white;
-    font-family: monospace;
     font-size: 15px;
 }
 
-h1 {
-    text-align: center;
+h1, h2 {
+    color: brown;
+}
+
+td, th {
+    border: 2px solid black;
+    height: 40px;
+    min-width: 125px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.important-attributes {
+    min-width: 200px;
+}
+
+.intro p {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    opacity: 0.5;
+}
+
+#intro-end {
+    opacity: 10;
+}
+
+article {
+    padding-top: 25px;
+}
+
+#byline {
+    margin-bottom: 0px;
 }
