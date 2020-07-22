@@ -1,6 +1,12 @@
 # forms-cheatsheet
-This is a cheatsheet for understanding the &lt;input&gt; element in HTML: its most important attributes and some alternative/complementary elements.
+1st hands-off project in Codecademy's web development track. Assignment: build a reference sheet for a certain aspect of HTML or CSS.
 
-I created it in response to the 1st hands-off project in Codecademy's web development track. It was my first time creating a webpage from scratch (at least, as an adult; I first learned HTML as a kid and made websites about everything back then).
+I chose to create a cheatsheet for the &lt;input&gt; element. It was my first time creating a webpage from scratch since I was a child.
 
-Assignment: build a reference sheet for a certain aspect of HTML or CSS.
+Some things I learned from this project:
+
+<ul>
+  <li>The difference between margin and padding</li>
+  <li>To always supply back-up fonts to font-family</li>
+  <li>The existence of the min-width attribute</li>
+  <li>The <em>role</em> attribute</li>
