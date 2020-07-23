@@ -8,5 +8,4 @@ Some things I learned from this project:
 <ul>
   <li>The difference between margin and padding</li>
   <li>To always supply back-up fonts to font-family</li>
-  <li>The existence of the min-width attribute</li>
-  <li>The <em>role</em> attribute</li>
+  <li>The existence of the <em>min-width</em> and <em>role</em> attributes</li>
