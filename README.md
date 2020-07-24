@@ -10,4 +10,5 @@ Some things I learned from this project:
   <li>To always supply back-up fonts to font-family</li>
   <li>The existence of the <em>min-width</em> and <em>role</em> attributes</li>
   <li>How to create a horizontal nav-bar</li>
+  <li>Improved my understanding of selector specificity</li>
 </ul>
